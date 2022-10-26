@@ -147,7 +147,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: var(--third-color);
 }
 
 .contact-icon {
@@ -172,16 +171,20 @@ img {
 }
 
 .hero {
+    max-width: 1600px;
+    margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--background-color-second);
-}
-
-.hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: 1600px;
+    background-size: cover;
+
+}
+
+.hero {
+
 }
 .hero-title {
     width: 696px;
@@ -247,9 +250,10 @@ img {
 }
 
 .benefits-icon {
+    height: 120px;
     display: flex;
     justify-content: center;
-    padding: 25px 100px;
+    align-items: center;
     margin-bottom: 30px;
     background: var(--background-color-first);
     border-radius: 4px;
@@ -368,7 +372,7 @@ img {
 }
 
 .team-soc-icon {
-    fill: var(--third-color);
+    fill: #AFB1B8;
 }
 
 .team-soc-link:hover {
@@ -404,7 +408,7 @@ img {
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    padding: 16px 32px;
+    align-items: center;
 }
 
 .clients-icon {
@@ -502,6 +506,7 @@ img {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+    color: var(--third-color);
 }
 
 .project-photo {
