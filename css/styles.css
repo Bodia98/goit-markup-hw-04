@@ -129,6 +129,7 @@ img {
 
 .header-contact {
     display: flex;
+    align-items: center;
     margin-left: auto;
     padding-left: 0;
     list-style: none;
@@ -375,21 +376,15 @@ img {
     fill: #AFB1B8;
 }
 
-.team-soc-link:hover {
+.team-soc-link:hover, .team-soc-link:focus {
     background-color: var(--secondary-color);
 }
 
-.team-soc-link:hover .team-soc-icon {
+.team-soc-link:hover .team-soc-icon, .team-soc-link:focus .team-soc-icon {
     fill: var(--fourth-color);
-}
-
-.team-soc-link:focus .team-soc-icon {
     background-color: var(--secondary-color);
 }
 
-.team-soc-link:focus .team-soc-icon {
-    fill: var(--fourth-color);
-}
 
 /* --------------Постійні клієнти----------------- */
 .clients-list {
@@ -415,21 +410,16 @@ img {
     fill: #AFB1B8;
 }
 
-.clients-link:hover {
-    border-color: var(--secondary-color);
-}
-
+.clients-link:hover, 
 .clients-link:focus {
     border-color: var(--secondary-color);
 }
 
-.clients-link:hover .clients-icon {
-    fill: var(--secondary-color);
-}
-
+.clients-link:hover .clients-icon, 
 .clients-link:focus .clients-icon {
     fill: var(--secondary-color);
 }
+
 /* --------------Наші проекти----------------- */
 
 .project-title-visually-hidden {
@@ -634,18 +624,12 @@ color: var(--secondary-color);
     fill: var(--fourth-color);
 }
 
-.footer-soc-link:hover {
+.footer-soc-link:hover, 
+.footer-soc-link:focus {
     background-color: var(--secondary-color);
 }
 
-.footer-soc-link:hover .footer-soc-icon {
-    fill: var(--fourth-color);
-}
-
-.footer-soc-link:focus .footer-soc-icon {
-    background-color: var(--secondary-color);
-}
-
-.footer-soc-link:focus .footer-soc-icon {
+.footer-soc-link:hover .footer-soc-icon, 
+.footer-soc-link:focus .footer-soc-icon  {
     fill: var(--fourth-color);
 }
